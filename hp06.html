@@ -1,0 +1,26 @@
+<DOCTYPE html>
+<html lang = "es">
+	<head>
+		<title>Ejercicio2</title>
+		<meta charset = "UTF-8"/>
+		<script>
+			var num = Math.floor((Math.random() * 99) + 1);
+			var cont = 0;
+			function Aleatorio()
+			{
+				alert(num);
+			}
+			function Contador()
+			{
+				cont++;
+				document.getElementById("hola").innerHTML = "Pulsaciones: " + cont;
+			}
+		</script>
+	</head>
+	
+	<body>
+		<p id = "hola">Hola</p>
+		<button onclick = "Aleatorio()">Aleatorio</button><br>
+		<button onclick = "Contador()">Contador</button>
+	</body>
+</hmtl>
